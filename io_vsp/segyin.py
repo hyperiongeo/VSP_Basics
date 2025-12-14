@@ -2,7 +2,7 @@
 import numpy as np
 import segyio
 
-def readsegyio3(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
+def read_segyio3(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
     
     """ Load a segy file using segyio from Equinor
 
@@ -238,7 +238,7 @@ def readsegyio3(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
     
     return data, numsamp, samprate, samprate_hz, thead.T
     
-def readsegy(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
+def read_segy(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
     
     """ Load a segy file using obspy read_segy routine
 
@@ -365,4 +365,4 @@ def readsegy(inputfile, file_headers,DF_ASL, SrcElev, SRD_ASL, PTS):
 
         print(table)
 
-    return data, numsamp, samprate, samprate_hz, thead    
+    return data, numsamp, samprate, samprate_hz, thead   

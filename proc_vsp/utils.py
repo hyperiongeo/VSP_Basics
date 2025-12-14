@@ -85,7 +85,7 @@ def shift(arr, tracehead, align, atime, fs):
         xshift = xshift.astype(int)        
         arr = np.pad(arr, ((0,0),(0, pad_twt)), 'constant')
         print(' pad twt : ', pad_twt, ' arr shape :', arr.shape)        
-#        newhead[:,8] = tracehead[:,8] * 2        
+        # newhead[:,8] = tracehead[:,8] * 2        
         arr2 = np.zeros(shape = (arr.shape[0], arr.shape[1]),dtype=np.float32)        
         print(' second arr2 shape :', arr2.shape)
 
